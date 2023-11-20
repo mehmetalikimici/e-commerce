@@ -13,4 +13,4 @@ When we added the products to the cart, I was able to make more than one selecti
 </ul>
 <h2>Screen</h2>
 
-![](e-commerce.gif)
+![](e-commerce-latest.gif)
