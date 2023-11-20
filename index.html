@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>E-Commerce</h1>
+      <input type="text" placeholder="Enter product name..." />
+      <div>
+        <button id="open-button">Cart</button>
+        <button>Sign Up</button>
+        <button>Log In</button>
+      </div>
+    </header>
+    <!-- Featured -->
+    <main>
+      <div class="category-wrapper">
+        <h1>Categories</h1>
+        <div class="categories" id="category-list"></div>
+      </div>
+
+      <div class="product-wrapper">
+        <h1>Ürünler</h1>
+        <div class="products" id="products"></div>
+      </div>
+      <!-- Modal -->
+      <div id="modal" class="modal-wrapper">
+        <div class="modal">
+          <img id="close-button" src="./images/close.png" alt="" />
+          <div class="modal-list"></div>
+          <div class="total">Toplam: <span id="total-price">0</span> €;</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
