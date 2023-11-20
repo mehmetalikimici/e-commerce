@@ -59,6 +59,9 @@ header div button:nth-child(3) {
 
 /* Categories */
 
+main{
+  padding: 50px;
+}
 .category-wrapper {
   padding: 50px;
   display: flex;
@@ -68,13 +71,14 @@ header div button:nth-child(3) {
 
 .categories {
   display: flex;
+  justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
 }
 
 .category {
-  max-width: 150px;
-  min-width: 100px;
+  max-width: 300px;
+  min-height: 200px;
   height: 150px;
   position: relative;
   display: flex;
@@ -85,22 +89,23 @@ header div button:nth-child(3) {
 .category img {
   width: 100%;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 .category span {
   position: absolute;
-  bottom: 10px;
+  bottom: -80px;
   background-color: white;
-  padding: 5px 10px;
+  padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* Products */
 
 .product-wrapper {
   padding: 50px;
+  margin-top: 50px;
 }
 
 .product-wrapper h1{
@@ -109,24 +114,12 @@ header div button:nth-child(3) {
 
 .products{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 120px;
 }
 
-.product {
-  max-width: 250px;
-  min-width: 200px;
-  min-height: 300px;
-  box-shadow: 1px 12px 19px 7px #0000004a;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
+
 
 .product img {
   width: 100%;
@@ -245,4 +238,27 @@ header div button:nth-child(3) {
 #total-price{
   color: green;
   font-weight: 700;
+}
+
+.card{
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.card .img-wrapper{
+  width: 100%;
+ height: 200px;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }

@@ -23,11 +23,12 @@ function fetchCategories() {
         const { category, image } = categoryy;
         //console.log(name);
         //console.log(image);
+        const randomNum = Math.round(Math.random() * 1000);
         const categoryDiv = document.createElement("div");
         categoryDiv.classList.add("category");
         categoryDiv.innerHTML = `
         <img
-            src=${image}
+            src="https://picsum.photos/300/300?r=${randomNum}"
             alt=""
           />
           <span>${category}</span>`;
@@ -51,15 +52,19 @@ function fetchProducts() {
         const productDiv = document.createElement("div");
         productDiv.classList.add("product");
         productDiv.innerHTML = `
+            <div class="card">
+            <div class="img-wrapper">
             <img
               src="${image}"
               alt=""
             />
+            </div>
             <p>${title}</p>
             <p>${category}</p>
             <div class="product-action">
               <p>${price}€</p>
               <button onclick="addToBasket({id:${id},title:'${title}',price:${price},image:'${image}',amount:1})">Add to cart</button>
+            </div>
             </div>
       
       
